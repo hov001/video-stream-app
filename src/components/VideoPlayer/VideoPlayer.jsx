@@ -11,13 +11,13 @@ export default function VideoPlayer() {
       {stream && (
         <div>
           <Text h3>{name || "Me"}</Text>
-          <video playsInline muted ref={myVideo} autoPlay />
+          <video playsInline ref={myVideo} autoPlay />
         </div>
       )}
       {callAccepted && !callEnded && (
         <div>
           <Text h3>{call.name || "Guest"}</Text>
-          <video playsInline muted ref={userVideo} autoPlay />
+          <video playsInline ref={userVideo} autoPlay />
         </div>
       )}
     </div>
